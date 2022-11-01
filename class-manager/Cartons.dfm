@@ -1,0 +1,454 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Cursor = crCross
+  VertScrollBar.Color = clWindow
+  VertScrollBar.ParentColor = False
+  ClientHeight = 494
+  ClientWidth = 940
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  OnClose = FormClose
+  OnResize = FormResize
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 940
+    Height = 494
+    Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    object ListView1: TListView
+      Left = 1
+      Top = 22
+      Width = 938
+      Height = 310
+      Cursor = crHandPoint
+      Align = alClient
+      Columns = <
+        item
+          AutoSize = True
+          Caption = 'Pr'#233'nom'
+          MaxWidth = 100
+        end
+        item
+          AutoSize = True
+          Caption = 'Vert'
+          MaxWidth = 75
+        end
+        item
+          AutoSize = True
+          Caption = 'Jaune'
+          MaxWidth = 75
+        end
+        item
+          AutoSize = True
+          Caption = 'Rouge'
+          MaxWidth = 75
+        end>
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Panel'
+      Font.Style = [fsBold]
+      GridLines = True
+      ParentFont = False
+      SortType = stText
+      TabOrder = 0
+      Touch.ParentTabletOptions = False
+      Touch.TabletOptions = [toPressAndHold, toSmoothScrolling]
+      ViewStyle = vsReport
+      OnColumnClick = ListView1ColumnClick
+      OnCompare = ListView1Compare
+    end
+    object ClasseCombo: TComboBox
+      Tag = -1
+      Left = 1
+      Top = 1
+      Width = 938
+      Height = 21
+      Cursor = crCross
+      Hint = 'Choisir une division'
+      Align = alTop
+      AutoDropDown = True
+      Style = csDropDownList
+      DropDownCount = 12
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnChange = ClasseComboChange
+      Items.Strings = (
+        '6A'
+        '6B'
+        '6C'
+        '6NONJazz'
+        '6Jazz'
+        '5A'
+        '5B'
+        '5C'
+        '5NONJazz'
+        '5Jazz'
+        '4A'
+        '4B'
+        '4C'
+        '4NONJazz'
+        '4Jazz'
+        '3A'
+        '3B'
+        '3C'
+        '3NONJazz'
+        '3Jazz')
+    end
+    object TabbedNotebook1: TTabbedNotebook
+      Left = 1
+      Top = 379
+      Width = 938
+      Height = 114
+      Cursor = crHandPoint
+      HelpType = htKeyword
+      Align = alBottom
+      DoubleBuffered = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -20
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      TabFont.Charset = DEFAULT_CHARSET
+      TabFont.Color = clBtnText
+      TabFont.Height = -11
+      TabFont.Name = 'Tahoma'
+      TabFont.Style = []
+      ParentDoubleBuffered = False
+      TabOrder = 2
+      object TTabPage
+        Left = 4
+        Top = 35
+        Caption = 'Notes'
+        object Panel2: TPanel
+          Left = 0
+          Top = -2
+          Width = 930
+          Height = 77
+          Align = alBottom
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          OnResize = Panel2Resize
+          object MoyenneR: TLabel
+            Left = 825
+            Top = 30
+            Width = 3
+            Height = 13
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object MoyenneV: TLabel
+            Left = 72
+            Top = 30
+            Width = 3
+            Height = 13
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object MoyenneJ: TLabel
+            Left = 460
+            Top = 3
+            Width = 3
+            Height = 13
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object BouttonR: TButton
+            Left = 859
+            Top = 1
+            Width = 70
+            Height = 75
+            Cursor = crCross
+            Align = alRight
+            Caption = 'Rouge'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -20
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 0
+            OnClick = BouttonRClick
+          end
+          object BoutonJ: TButton
+            Left = 448
+            Top = 17
+            Width = 70
+            Height = 59
+            Cursor = crCross
+            Align = alCustom
+            Caption = 'Jaune'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -20
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 1
+            OnClick = BoutonJClick
+          end
+          object BoutonV: TButton
+            Left = 1
+            Top = 1
+            Width = 70
+            Height = 75
+            Cursor = crCross
+            Align = alLeft
+            Caption = 'Vert'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -20
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 2
+            OnClick = BoutonVClick
+          end
+        end
+      end
+      object TTabPage
+        Left = 4
+        Top = 35
+        Caption = 'Edition'
+        object Panel3: TPanel
+          Left = 0
+          Top = -3
+          Width = 930
+          Height = 78
+          Align = alBottom
+          TabOrder = 0
+          OnResize = Panel3Resize
+          object BoutonSupprimer: TButton
+            Left = 96
+            Top = 12
+            Width = 120
+            Height = 45
+            Cursor = crCross
+            Caption = 'Supprimer un '#233'l'#232've'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 0
+            OnClick = BoutonSupprimerClick
+          end
+          object BoutonAjouter: TButton
+            Left = 656
+            Top = 12
+            Width = 120
+            Height = 45
+            Cursor = crCross
+            Caption = 'Ajouter un '#233'l'#232've'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 1
+            OnClick = BoutonAjouterClick
+          end
+          object EditionClasse: TButton
+            Left = 408
+            Top = 50
+            Width = 115
+            Height = 25
+            Cursor = crMultiDrag
+            Caption = 'Ajouter une classe'
+            Enabled = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 2
+            OnClick = EditionClasseClick
+          end
+          object Edit1: TEdit
+            Left = 408
+            Top = 23
+            Width = 153
+            Height = 21
+            Cursor = crIBeam
+            Hint = 'Nom de la classe'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 3
+            Text = 'Nom de la nouvelle classe'
+            OnChange = Edit1Change
+          end
+          object SupprClasse: TButton
+            Left = 376
+            Top = 0
+            Width = 130
+            Height = 25
+            Cursor = crCross
+            Caption = 'Supprimer une Classe'
+            Enabled = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 4
+            OnClick = SupprClasseClick
+          end
+        end
+      end
+    end
+    object SpeedButton: TSpTBXSpeedButton
+      Left = 898
+      Top = 661
+      Width = 42
+      Height = 40
+      Cursor = crHelp
+      Caption = '?'
+      Color = clHotLight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -35
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = SpeedButtonClick
+      CaptionGlow = gldAll
+      CaptionGlowColor = clWhite
+      Flat = True
+    end
+    object Panel4: TPanel
+      Left = 1
+      Top = 332
+      Width = 938
+      Height = 47
+      Cursor = crArrow
+      Align = alBottom
+      TabOrder = 4
+      OnResize = Panel4Resize
+      object Label1: TLabel
+        Left = 1
+        Top = 30
+        Width = 936
+        Height = 16
+        Cursor = crArrow
+        Align = alBottom
+        Alignment = taCenter
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -12
+        Font.Name = 'Tahoma'
+        Font.Orientation = 5
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitWidth = 4
+      end
+      object Label2: TLabel
+        Left = 464
+        Top = 14
+        Width = 3
+        Height = 13
+        Cursor = crArrow
+        Alignment = taCenter
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Vert: TLabel
+        Left = 1
+        Top = 1
+        Width = 3
+        Height = 29
+        Cursor = crArrow
+        Align = alLeft
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitHeight = 13
+      end
+      object Rouge: TLabel
+        Left = 934
+        Top = 1
+        Width = 3
+        Height = 29
+        Cursor = crArrow
+        Align = alRight
+        Alignment = taRightJustify
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitHeight = 13
+      end
+      object Jaune: TLabel
+        Left = 229
+        Top = 2
+        Width = 3
+        Height = 13
+        Cursor = crArrow
+        Align = alCustom
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+  end
+end

@@ -1,0 +1,51 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Cursor = crHelp
+  BorderStyle = bsDialog
+  Caption = 'Aide'
+  ClientHeight = 482
+  ClientWidth = 235
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 0
+    Width = 225
+    Height = 481
+    Caption = 
+      '   Programme cr'#233'e par Yann Morelle           pour les professeur' +
+      's du coll'#232'ge de                                 Mons'#233'gur        ' +
+      '                                                                ' +
+      '                                            Pour attribuer des p' +
+      'oints Verts, Jaunes ou Rouges, Cliquez sur l'#39' '#233'l'#232've puis sur le ' +
+      'bouton correspondant au point que vous voulez lui donner. Vous p' +
+      'ouvez trier par points en cliquant sur le haut de la colonne cor' +
+      'respondante. Pour changer de division, cliquez sur le           ' +
+      'menu d'#233'roulant en haut puis s'#233'l'#233'ctionnez la classe. Pour Ajouter' +
+      ' un '#233'l'#232've, cliquez sur l'#39' onglet Edition au bas de la page, puis' +
+      ' cliquez sur le bouton "Ajouter un '#233'l'#232've", l'#39' '#233'l'#232've appara'#238'tra d' +
+      'ans la liste, '#224' vous d'#39' entrer son nom. Pour Supprimer un '#233'l'#232've,' +
+      ' s'#233'l'#233'ctionnez-le puis cliquez sur le bouton "Supprimer un '#233'l'#232've"' +
+      ' (toujours dans l'#39' onglet '#233'dition) puis confirmez la suppression' +
+      '. Pour Supprimer une classe, (dans l'#39'onglet '#233'dition) cliquez sur' +
+      ' "Supprimer une classe", la classe ouverte se Supprimera. Pour A' +
+      'jouter une Classe, allez dans l'#39'onglet '#233'dition, '#233'crivez son nom ' +
+      'dans le champ '#233'ditable, puis cliquez sur le bouton "Ajouter une ' +
+      'Classe". Une Moyenne des '#233'l'#232'ves par couleur de point s'#39' affiche ' +
+      #224' cot'#233' des boutons correspondants au bas de la page. Toutes les ' +
+      'donn'#233'es se                sauvegardent dans le dossier du       ' +
+      '                                Programme.                      ' +
+      '                                                                ' +
+      '                               Bonne Chance !                   ' +
+      '                           '#9787' Yann Morelle '#9787'          '
+    WordWrap = True
+  end
+end
